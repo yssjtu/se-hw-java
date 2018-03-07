@@ -23,6 +23,7 @@ public class output {
             wordladder test_wl = new wordladder(input_filename, input_word1, input_word2);
             if (test_wl.read_dict()) {
                 if (!test_wl.isIsinput_valid()) {
+                    System.out.println("invalid word");
                     continue;
                 }
                 Stack<String> wl = test_wl.wl_stack();
